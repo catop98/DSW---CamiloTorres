@@ -19,6 +19,7 @@
 
 
 }
+
  
 body {
 	background:white;
@@ -145,12 +146,16 @@ footer .links a {
 	padding:10px;
 	text-align: center;
 	text-decoration:none;
+
 }
  
 footer .links a:hover {
 	background:#E74C3C;
 }
- 
+ footer .links img {
+	position: relative;
+	left: -420px;
+}
 footer .social {
 	background:#e67e22;
 }
@@ -204,4 +209,8 @@ footer .social a {
         font-size: 48px;
         text-shadow: 4px 4px 4px #aaa;
 	}
+	h2 {
+  clear: both;
+}
+
 }
