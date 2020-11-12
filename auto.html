@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://allfont.es/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/planning.css">
+	<title>Pagina principal</title>
+</head>
+<body>
+<div class="contenedor">
+	<header>
+		<div>
+			<img src="imagenes/logo2.png" width="236" alt="3.508">
+		</div>
+		<nav>
+				<a href="planning.html">Inicio</a>
+				<a href="conceptos.html">Conceptos</a>
+				<a href="recursos.html">Recursos</a>
+				<a href="autor.html">Autor</a>
+				<a href="auto.html">Autoevaluación</a>
+			</nav>
+		</header>
+
+		<div id="preguntas"></div>
+ 
+		<script type="text/javascript">
+			var preguntas = [
+			" ¿Quien descubrio America?",
+			"¿Quien es el mayor superheroes?",
+			"¿porque pajaros?"
+			];
+			var respuestas =[
+			["color","farsi","lolo","tu"],
+			["Spaiderman","Batman","tu","el"],
+			["nose","yo","tu","el"]
+
+			];
+
+			var indice_aleatorio = Math.Floor(Math.random()*preguntas.length);
+
+
+			var respuestas_posibles = respuestas(indice_aleatorio);
+
+			var txt_respuestas="";
+			for(i in respuestas_posibles){
+				txt_respuestas = '<input type="radio"><label>'+respuestas_posibles[i]+'</label><br>';
+			}
+
+			document.getElementById("respuestas").innerHTML=txt_respuestas;
+
+			document.getElementById('preguntas').innerHTML = preguntas(indice_aleatorio);
+		</script>
+ 
+		
+ 
+		
+	</div>
+
+
+</body>
+</html>
