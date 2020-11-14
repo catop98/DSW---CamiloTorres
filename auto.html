@@ -4,7 +4,7 @@
 	<link href="https://allfont.es/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/planning.css">
-	<title>Pagina principal</title>
+	<title>Evaluación del sitio</title>
 </head>
 <body>
 <div class="contenedor">
@@ -18,38 +18,14 @@
 				<a href="recursos.html">Recursos</a>
 				<a href="autor.html">Autor</a>
 				<a href="auto.html">Autoevaluación</a>
+				<a href="https://es.educaplay.com/recursos-educativos/7624740-autoevaluacion.html" target="blank">Autoevaluación1</a>
+				<a href="https://es.educaplay.com/recursos-educativos/7625763-autoevaluacion2.html" target="blank">Autoevaluación2</a>
 			</nav>
 		</header>
 
-		<div id="preguntas"></div>
- 
-		<script type="text/javascript">
-			var preguntas = [
-			" ¿Quien descubrio America?",
-			"¿Quien es el mayor superheroes?",
-			"¿porque pajaros?"
-			];
-			var respuestas =[
-			["color","farsi","lolo","tu"],
-			["Spaiderman","Batman","tu","el"],
-			["nose","yo","tu","el"]
+		<h1 class="o">Evaluación Sitio</h1>
 
-			];
-
-			var indice_aleatorio = Math.Floor(Math.random()*preguntas.length);
-
-
-			var respuestas_posibles = respuestas(indice_aleatorio);
-
-			var txt_respuestas="";
-			for(i in respuestas_posibles){
-				txt_respuestas = '<input type="radio"><label>'+respuestas_posibles[i]+'</label><br>';
-			}
-
-			document.getElementById("respuestas").innerHTML=txt_respuestas;
-
-			document.getElementById('preguntas').innerHTML = preguntas(indice_aleatorio);
-		</script>
+		<embed src="archivos/Matriz-EvalSite_CamiloTorres.pdf" type="application/pdf" width="100%" height="600px" />
  
 		
  
